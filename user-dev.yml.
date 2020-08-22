@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.188.128/SpringCloud_Sell?characterEncoding=utf8&useSSL=false
+    password: root1!
+    username: root
+  redis:
+    host: 192.168.188.128
+    port: 6379
