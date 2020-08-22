@@ -1,0 +1,26 @@
+zuul:
+  routes:
+#    /myProduct/product/list  ->/Product/product/list
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+    config:
+      path: /config/**
+      serviceId: config
+      sensitiveHeaders:
+      stripPrefix: true
+#  ignored-patterns:
+#    - /product/product/listForOrder
+# management:
+#  security:
+#    enabled: false
+
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+ribbon:
+  ReadTimeout: 60000
+  SocketTimeout: 60000
+
