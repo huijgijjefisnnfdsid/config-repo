@@ -1,6 +1,5 @@
 spring:
-  application:
-    name: order
+  
   cloud:
     stream:
       bindings:
@@ -8,11 +7,7 @@ spring:
           group: order
           content-type: application/json
 #            virtual-host: /
-    config:
-      discovery:
-        enabled: true
-        service-id: CONFIG
-      profile: test
+
 
   zipkin:
     base-url: http://192.168.24.129:9411/
@@ -34,12 +29,7 @@ spring:
   redis:
     host: 192.168.24.129
     port: 6379
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
-#  instance:
-#    prefer-ip-address: true
+
 
 logging:
   level:
