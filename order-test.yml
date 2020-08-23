@@ -21,7 +21,7 @@ spring:
 #      probability: 1
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.188.128/SpringCloud_Sell?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://192.168.24.129/SpringCloud_Sell?characterEncoding=utf8&useSSL=false
     password: root1!
     username: root
 eureka:
